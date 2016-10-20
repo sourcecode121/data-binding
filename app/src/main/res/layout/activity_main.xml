@@ -6,6 +6,9 @@
         <variable
             name="user"
             type="com.example.databinding.User"/>
+        <variable
+            name="handlers"
+            type="com.example.databinding.Handlers"/>
     </data>
 
     <LinearLayout
@@ -29,5 +32,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@{user.lastName}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Message 1"
+            android:onClick="@{handlers::onClickMessage1}"/>
     </LinearLayout>
 </layout>
