@@ -46,5 +46,12 @@
             android:layout_marginTop="8dp"
             android:text="Show full name"
             android:onClick="@{() -> handlers.onClickShowFullName(user)}"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Change names"
+            android:onClick="@{() -> handlers.onClickChangeNames(user)}"/>
     </LinearLayout>
 </layout>
