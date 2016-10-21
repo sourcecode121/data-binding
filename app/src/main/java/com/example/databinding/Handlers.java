@@ -24,4 +24,9 @@ public class Handlers {
     public void onClickMessage1(View view) {
         Toast.makeText(context, "Message 1", Toast.LENGTH_SHORT).show();
     }
+
+    // Listener binding event handler
+    public void onClickShowFullName(User user) {
+        Toast.makeText(context, user.getFirstName() + " " + user.getLastName(), Toast.LENGTH_SHORT).show();
+    }
 }
